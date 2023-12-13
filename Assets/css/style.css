@@ -4,10 +4,15 @@
   font-family: 'Roboto', sans-serif;
 }
 
+body{
+  overflow-x: hidden;
+}
+
   .px-5 {
     padding: 0 11rem !important;
   }
   .navbar {
+    margin: 1rem;
     justify-content: space-between;
     align-items: center;
   }
@@ -86,11 +91,14 @@
 
     /* Custom styles */
     .hero-container {
+      height: 120vh;
+      position: relative;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
-      padding: 6.5rem ;
+      padding: 0 12rem;
+      max-width: 1444px;
       /* background-color: #f8f9fa; */
     }
 
@@ -276,6 +284,17 @@
   }
 }
 
+.list-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12rem;
+  max-width: 1444px;
+  /* background-color: #f8f9fa; */
+}
+
 .list-1{
     margin-top: 144px;
     display: flex;
@@ -356,4 +375,84 @@
 
 .list2-image img{
   width: 400px;
+}
+
+.containter-fluid1{
+  position: relative;
+}
+
+.card-img{
+  top: 0;
+  z-index: -1;
+  right: -230px;
+  position: absolute;
+  width: 2000px;
+}
+
+.card-text {
+  margin-top: 200px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  flex: 1;
+  background-color: #f3f5ff;
+
+  /* max-width: 450px; Lebar maksimum teks */
+  /* margin-bottom: 5 rem; */
+}
+
+.card-text h1{
+  color: #091133;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.p1{
+  text-align: center;
+  width: 500px;
+  font-size: 15px;
+  color: #505F98;
+}
+
+.p2{
+  font-weight: bold;
+  font-size: 35px;
+  color: #091133;
+}
+
+.p3{
+  color: #505F98;
+}
+
+.p4{
+  font-size: 11px;
+  color: #505F98;
+}
+
+.footer-container {
+  background-color: #E7ECFF;
+  position: relative;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6.5rem 12rem;
+  max-width: 1444px;
+  /* background-color: #f8f9fa; */
+}
+
+.p12{
+  bottom: 0;
+  font-size: 15px;
+  color: #505F98;
+}
+
+.up{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 35px;
+  border-bottom: 1px solid black;
 }
