@@ -27,7 +27,7 @@
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg sticky-top px-5">
-      <div class="container-fluid">
+      <div class="container-fluid" id="Nav">
         <button
           class="navbar-toggler"
           type="button"
@@ -44,14 +44,14 @@
         <a class="navbar-brand mx-auto order-lg-2" href="#">Landing</a>
 
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item pe-3">
+          <ul class="navbar-nav" style="gap: 2.3rem;">
+            <li class="nav-item">
               <a class="nav-link" href="#">Home</a>
             </li>
-            <li class="nav-item pe-3">
+            <li class="nav-item">
               <a class="nav-link" href="#">About</a>
             </li>
-            <li class="nav-item pe-3">
+            <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
             </li>
           </ul>
@@ -63,7 +63,7 @@
     </nav>
 
     <!-- Hero -->
-    <div class="container-fluid hero-container">
+    <div class="container-fluid hero-container px-5">
       <img class="image-hero" src="Assets/path-round.svg" alt="res" />
       <div class="hero-text">
         <h1>Introduce Your Product Quickly & Effectively</h1>
@@ -86,11 +86,13 @@
     </div>
 
     <!-- List Content -->
-    <div class="container-fluid hero-container">
+    <div class="container-fluid hero-container px-5">
       <!-- List1 -->
-      <div class="hero-text">
-        <h1 class="list1-h1">Light, Fast & Powerful</h1>
-        <br>
+      <div class="list-1">
+
+        <div class="hero-text">
+          <h1 class="list1-h1">Light, Fast & Powerful</h1>
+        <br />
         <p class="list1-p">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor
           justo ac mauris malesuada, vel scelerisque est aliquet. Proin eu
@@ -101,31 +103,88 @@
         </p>
         <div class="list1-a">
           <div class="left">
-            <img src="/Assets/title-icon.svg" alt="">
+            <img src="/Assets/title-icon.svg" alt="" />
             <h2 class="list1-h2">Title Goes Here</h2>
-            <p class="list1-p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="list1-p2">
+              Lorem ipsum dolor sit amet, cons ectetur adipiscing elit.
+            </p>
           </div>
           <div class="right">
-            <img src="/Assets/title-icon.svg" alt="">
+            <img src="/Assets/title-icon.svg" alt="" />
             <h2 class="list1-h2">Title Goes Here</h2>
-            <p class="list1-p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="list1-p2">
+              Lorem ipsum dolor sit amet, con sectetur adipiscing elit.
+            </p>
           </div>
         </div>
       </div>
       <div class="list1-image">
         <img src="Assets/list-1.svg" alt="Hero Image" />
       </div>
+    </div>
+
       <!-- list2 -->
-      <div class="list2-image">
-        <img src="Assets/list-1.svg" alt="Hero Image" />
+      <div class="list-2">
+        <div class="list2-image">
+          <img src="Assets/list-2.svg" alt="Hero Image" />
+        </div>
+        <div class="list2-text">
+          <h1 class="list2-h1">Light, Fast & Powerful</h1>
+          <br />
+          <p class="list2-p">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            auctor justo ac mauris malesuada, vel scelerisque est aliquet. Proin
+            eu Lorem ipsum dolor sit amet,
+          </p>
+          <p class="list2-p">
+            consectetur adipiscing elit. Nullam auctor justo ac mauris
+            malesuada, vel scelerisque est aliquet. Proin eu
+          </p>
+        </div>
       </div>
-      <div class="list2-text">
-        <h1 class="list2-h1">Light, Fast & Powerful</h1>
-        <br>
-        <p class="list2-p">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor
-          justo ac mauris malesuada, vel scelerisque est aliquet. Proin eu
-        </p>
+
+      <!-- list3 -->
+      <div class="list-2">
+        <div class="list2-text">
+          <h1 class="list2-h1">Light, Fast & Powerful</h1>
+          <br />
+          <p class="list2-p">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            auctor justo ac mauris malesuada, vel scelerisque est aliquet. Proin
+            eu Lorem ipsum dolor sit amet,
+          </p>
+          <p class="list2-p">
+            consectetur adipiscing elit. Nullam auctor justo ac mauris
+            malesuada, vel scelerisque est aliquet. Proin eu
+          </p>
+        </div>
+        <div class="list2-image">
+          <img src="Assets/list-3.svg" alt="Hero Image" />
+        </div>
+      </div>
+
+      <!-- List4 -->
+      <div class="list-2">
+        <div class="list2-image">
+          <img src="Assets/list-4.svg" alt="Hero Image" />
+        </div>
+        <div class="list2-text">
+          <h1 class="list2-h1">Light, Fast & Powerful</h1>
+          <br />
+          <p class="list2-p">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            auctor justo ac mauris malesuada, vel scelerisque est aliquet. Proin
+            eu Lorem ipsum dolor sit amet,
+          </p>
+          <p class="list2-p">
+            consectetur adipiscing elit. Nullam auctor justo ac mauris
+            malesuada, vel scelerisque est aliquet. Proin eu
+          </p>
+          <div class="hero-buttons">
+            <button class="btn1">Purchase Now</button>
+          </div>
+        </div>
+        
       </div>
     </div>
 
@@ -144,6 +203,12 @@
             ? "none"
             : "block";
       }
+      window.addEventListener("scroll", () => {
+        let viewport = window.scrollY;
+        let nav = document.getElementById("Nav");
+        if (viewport >= 25) nav.classList.add("go-scroll");
+        else nav.classList.remove("go-scroll");
+      });
     </script>
   </body>
 </html>

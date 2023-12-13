@@ -9,7 +9,14 @@
   }
   .navbar {
     justify-content: space-between;
-    align-items: center; /* Menyusun elemen secara vertikal di tengah */
+    align-items: center;
+  }
+.container-fluid{
+  padding: 0;
+  transition: 0.2s; /* Menyusun elemen secara vertikal di tengah */
+}
+  .go-scroll{
+    backdrop-filter: blur(3px);
   }
 
   .navbar-brand {
@@ -21,6 +28,7 @@
   }
 
   .nav-link {
+    padding: 0 !important;
     color: #505F98 !important;
   }
 
@@ -51,7 +59,7 @@
       padding-right: 0 !important;
     }
 
-    .navbar-nav {
+    .navbar-nav{
       order: 1;
     }
 
@@ -87,7 +95,6 @@
     }
 
     .hero-text {
-        position: relative;
       flex: 1;
       bottom: 80px;
       left: 5.6rem;
@@ -136,7 +143,8 @@
     }
 
     .hero-image img{
-        right: 0;
+      position: relative;
+        left: 72px;
         width: 432px;
     }
 
@@ -268,6 +276,14 @@
   }
 }
 
+.list-1{
+    margin-top: 144px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  
+}
+
 .list1-h1{
   font-size: 30px;
   color: #091133;
@@ -290,7 +306,7 @@
 }
 
 .list1-a{
-  width: 600px;
+  width: 530px;
   margin-top: 2rem;
   display: flex;
   gap: 2rem;
@@ -305,21 +321,39 @@
 }
 
 .list1-image{
-  position: relative;
   width: 400px;
-  bottom: 90px;
-  right: 3.5rem;
 }
 
 .list1-image img{
   width: 400px;
 }
 
+.list-2{
+  margin-top: 144px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .list2-text{
-  position: relative;
   flex: 1;
-  bottom: 80px;
-  right: 3.5rem;
-  max-width: 450px; /* Lebar maksimum teks */
+  /* bottom: 80px;
+  right: 5.3rem; */
+  max-width: 350px; /* Lebar maksimum teks */
   /* margin-bottom: 5 rem; */
+}
+
+.list2-h1{
+  font-size: 30px;
+  color: #091133;
+  font-weight: bold;
+}
+
+.list2-p{
+  font-size: 14px;
+  color: #505F98;
+}
+
+.list2-image img{
+  width: 400px;
 }
