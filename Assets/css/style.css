@@ -94,6 +94,9 @@ body{
     .image-hero{
       display: none;
     }
+    .card-img{
+      display: none;
+    }
   }
 
     /* Custom styles */
@@ -159,7 +162,7 @@ body{
 
     .hero-image img{
       position: relative;
-        left: 72px;
+        left: 100px;
         width: 432px;
     }
 
